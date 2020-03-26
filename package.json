@@ -1,0 +1,36 @@
+{
+  "name": "stevens_coles_tech_assesment",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "start": "node index.js",
+    "debug": "nodemon --inspect index.js  ",
+    "debug-unit-test": "nodemon  -x \"npm run unit-test --inspect\"",
+    "unit-test": "lab -c -r console -o stdout -r lcov -o lcov.info",
+    "test": "npm run lint && npm run unit-test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.0",
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/joi": "^17.1.1",
+    "axios": "*",
+    "vision": "*",
+    "inert": "*",
+    "sinon": "*",
+    "blipp": "*"
+  },
+  "devDependencies": {
+    "@hapi/code": "^8.0.1",
+    "@hapi/lab": "^22.0.4",
+    "codeclimate-test-reporter": "*",
+    "nodemon": "*",
+    "standard": "*"
+  }
+}
